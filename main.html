@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js/jquery.mobile-1.4.5.css">
+    <link rel="stylesheet" href="./fontawesome/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper2.css">
+    <link rel="stylesheet" href="./css/profile.css">
+
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.25/datatables.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/qrcode.js"></script>
+    <script src="./fontawesome/all.js"></script>
+    <script src="./js/dataTableLoad.js"></script>
+    <script src="./js/loadProfile.js"></script>
+    <title>UTM APP</title>
+</head>
+
+<body>
+
+
+    <!----PageOne Starts------>
+
+    <div data-role="page" id="pageone" data-theme="a">
+
+
+
+        <!-- Sidebar -->
+
+        <div data-role="panel" id="mypanel" data-display="reveal" data-position="left">
+
+            <div id="Sidebar11" class="sidebar1">
+                <a href="#" class="closebtn" data-rel="close">&times;</a>
+
+                <a id="first" href="#pageone"><i class="fas fa-home"></i>Home</a>
+                <a href="#pagefour"><i class="fas fa-fire"></i>Events</a>
+                <a href="#pagefive"><i class="fas fa-history"></i>News</a>
+                <a href="#pagetwo"><i class="fas fa-question-circle"></i>FAQ</a>
+                <a href="#pagethree"><i class="fas fa-map-marked"></i>Locate Us</a>
+            </div>
+            <!-- panel content goes here -->
+        </div><!-- /panel -->
+
+
+        <div data-role="panel" id="mypanelL" data-display="reveal" data-position="right">
+
+
+            <div id="Sidebar2" class="sidebar2">
+                <a href="#" class="closebtn" data-rel="close">&times;</a>
+                <a id="bfirst" class="bfirst" href="#"><i class="fas fa-user"></i></a>
+                <a id="first" href="#pagesix"><i class="far fa-id-badge"></i> Profile</a>
+                <a href="#pageseven"><i class="fas fa-qrcode"></i> Generate QR Code</a>
+                <a href="addNews.html" class="staff hid"><i class="far fa-plus-square"></i> News</a>
+                <a href="addEvents.html" class="staff hid"><i class="far fa-plus-square"></i> Events</a>
+                <a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Sign out</a>
+            </div>
+
+        </div><!-- /panel -->
+
+
+
+
+
+        <!---X---Sidebars-----X-->
+
+
+
+        <div data-role="header">
+            <div class="header-section">
+                <div class="panel-right" style="margin-left:15px; margin-top:15px;">
+                    <a href="#mypanel"><i class="fas fa-align-justify"></i></a>
+                </div>
+                <div class="header-center">
+                    <img src="./assets/utmlogo.png" style="height:80%; width:90%;" class="header-logo" alt="">
+
+                </div>
+
+                <div class="panel-left" style="margin-right:15px; margin-top:15px;">
+                    <a href="#mypanelL"><i class="far fa-user"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div data-role="main" class="ui-content">
+
+            <!--Scrolling Text -->
+            <div id="promo-notifications" style="margin-bottom:35px;">
+                <ul>
+                    <li>Welcome to UAPP </li>
+                    <li>During this COVID period, the Government is requesting that only vaccinated students will be
+                        allowed on Campus. </li>
+                    <li>If you are not vaccinated , you will be required to bring a PCR test dating less than 7 days.
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p><a href="http://www.utm.ac.mu/index.php/en/template-styles/sbmf">School of Business,Finance
+                                and Management</a></p>
+                        <img src="./assets/sbmf.jpg" />
+
+                    </div>
+                    <div class="swiper-slide">
+                        <p><a href="http://www.utm.ac.mu/index.php/en/template-styles/site">School of Innovative
+                                Technology and Engineering</a></p>
+                        <img src="./assets/site.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <p><a href="http://www.utm.ac.mu/index.php/en/template-styles/ssdt">School of Sustainable
+                                Development and Tourism</a></p>
+                        <img src="./assets/ssdt.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <p><a href="http://www.utm.ac.mu/index.php/en/template-styles/school-of-health-sciences-shs">School
+                                of Health Sciences</a></p>
+                        <img src="./assets/shs.jpg" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+
+        </div>
+
+
+
+        <div data-role="footer" id="footer">
+            <h3><a href="#">Dev by MB</a></h3>
+        </div>
+
+
+    </div>
+
+    <!----PageOne Ends------>
+
+    <!---PageTwo Starts----->
+
+    <div data-role="page" id="pagetwo" data-theme="a">
+
+
+
+        <!-- Sidebar -->
+        <div data-role="panel" id="mypanel" data-display="reveal" data-position="left">
+
+            <div id="Sidebar11" class="sidebar1">
+                <a href="#" class="closebtn" data-rel="close">&times;</a>
+
+                <a id="first" href="#pageone"><i class="fas fa-home"></i>Home</a>
+                <a href="#pagefour"><i class="fas fa-fire"></i>Events</a>
+                <a href="#pagefive"><i class="fas fa-history"></i>News</a>
+                <a href="#pagetwo"><i class="fas fa-question-circle"></i>FAQ</a>
+                <a href="#pagethree"><i class="fas fa-map-marked"></i>Locate Us</a>
+            </div>
+            <!-- panel content goes here -->
+        </div><!-- /panel -->
+
+
+        <div data-role="panel" id="mypanelL" data-display="reveal" data-position="right">
+
+
+            <div id="Sidebar2" class="sidebar2">
+                <a href="#" class="closebtn" data-rel="close">&times;</a>
+                <a id="bfirst" class="bfirst" href="#"><i class="fas fa-user"></i></a>
+                <a id="first" href="#pagesix"><i class="far fa-id-badge"></i> Profile</a>
+                <a href="#pageseven"><i class="fas fa-qrcode"></i> Generate QR Code</a>
+                <a href="addNews.html" class="staff hid"><i class="far fa-plus-square"></i> News</a>
+                <a href="addEvents.html" class="staff hid"><i class="far fa-plus-square"></i> Events</a>
+                <a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Sign out</a>
+            </div>
+
+        </div><!-- /panel -->
+
+        <!---X---Sidebars-----X-->
+
+
+
+        <div data-role="header">
+            <div class="header-section">
+                <div class="panel-right" style="margin-left:15px; margin-top:15px;">
+                    <a href="#mypanel"><i class="fas fa-align-justify"></i></a>
+                </div>
+                <div class="header-center">
+                    <img src="./assets/utmlogo.png" style="height:80%; width:90%;" class="header-logo" alt="">
+
+                </div>
+
+                <div class="panel-left" style="margin-right:15px; margin-top:15px;">
+                    <a href="#mypanelL"><i class="far fa-user"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div data-role="main" class="ui-content">
+
+            <!------ChatBot------>
+            <div class="wrapper">
+                <div class="title">Frequently Asked Question</div>
+                <div class="form">
+                    <div class="bot-inbox inbox">
+                        <div class="icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="msg-header">
+                            <p>Hello there, how can I help you?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="typing-field">
+                    <div class="input-data">
+                        <input id="data" type="text" placeholder="Type something here.." required>
+
+                    </div>
+                    <div class="btn-class" style="margin-top: 20px;">
+                        <button id="send-btn"><i class="far fa-paper-plane"></i></button>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <script>
+                $(document).ready(function () {
+                    $("#send-btn").on("click", function () {
+                        $value = $("#data").val();
+                        $msg = '<div class="user-inbox inbox"><div class="msg-header"><p>' + $value + '</p></div></div>';
+                        $(".form").append($msg);
+                        $("#data").val('');
+
+                        // start ajax code
+                        $.ajax({
+                            url: 'http://localhost:8080//UAPP/includes/message.php',
+                            type: 'POST',
+                            data: 'text=' + $value,
+                            success: function (result) {
+                                $replay = '<div class="bot-inbox inbox"><div class="icon"><i class="fas fa-user"></i></div><div class="msg-header"><p>' + result + '</p></div></div>';
+                                $(".form").append($replay);
+                                // when chat goes down the scroll bar automatically comes to the bottom
+                                $(".form").scrollTop($(".form")[0].scrollHeight);
+                            }
+                        });
+                    });
+                });
+            </script>
+
+            <!---X--ChatBot--X--->
+
+
+        </div>
+
+
+        <div data-role="footer">
+            <h3><a href="#">Contact Us</a></h3>
+        </div>
+    </div>
+
+    <!---PageTwo Ends----->
+
+    <!----PageThree Starts------>
+
+    <div data-role="page" id="pagethree" data-theme="a">
+        <!-- Sidebar -->
+
+        <div data-role="panel" id="mypanel" data-display="reveal" data-position="left">
+
+            <div id="Sidebar11" class="sidebar1">
+                <a href="#" class="closebtn" data-rel="close">&times;</a>
+
+                <a id="first" href="#pageone"><i class="fas fa-home"></i>Home</a>
+                <a href="#pagefour"><i class="fas fa-fire"></i>Events</a>
+                <a href="#pagefive"><i class="fas fa-history"></i>News</a>
+                <a href="#pagetwo"><i class="fas fa-question-circle"></i>FAQ</a>
+                <a href="#pagethree"><i class="fas fa-map-marked"></i>Locate Us</a>
+            </div>
+            <!-- panel content goes here -->
+        </div><!-- /panel -->
+
+
+        <div data-role="panel" id="mypanelL" data-display="reveal" data-position="right">
+
+
+            <div id="Sidebar2" class="sidebar2">
+                <a href="#" class="closebtn" data-rel="close">&times;</a>
+                <a id="bfirst" class="bfirst" href="#"><i class="fas fa-user"></i></a>
+                <a id="first" href="#pagesix"><i class="far fa-id-badge"></i> Profile</a>
+                <a href="#pageseven"><i class="fas fa-qrcode"></i> Generate QR Code</a>
+                <a href="addNews.html" class="staff hid"><i class="far fa-plus-square"></i> News</a>
+                <a href="addEvents.html" class="staff hid"><i class="far fa-plus-square"></i> Events</a>
+                <a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Sign out</a>
+            </div>
+
+        </div><!-- /panel -->
+
+        <!---X---Sidebars-----X-->
+        <div data-role="header">
+            <div class="header-section">
+                <div class="panel-right" style="margin-left:15px; margin-top:15px;">
+                    <a href="#mypanel"><i class="fas fa-align-justify"></i></a>
+                </div>
+                <div class="header-center">
+                    <img src="./assets/utmlogo.png" style="height:80%; width:90%;" class="header-logo" alt="">
+
+                </div>
+
+                <div class="panel-left" style="margin-right:15px; margin-top:15px;">
+                    <a href="#mypanelL"><i class="far fa-user"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div data-role="main" class="ui-content">
+
+            <div class="info-content">
+                <div class="info-img">
+                    <img src="./assets/location.png" style="height:20%;width: 20%;" alt="">
+                    <button id="locateUs">Locate Us</button>
+                </div>
+                <aside>
+                    <p>The University of Technology, Mauritius (UTM) was created in year 2000 by Act of Parliament as
+                        the Government implemented its plan to have a second University which would focus towards
+                        development of oriented sectors in particular. This historic step in the field of higher
+                        education was prompted mainly by the need to cater more vigorously for the increasing demand for
+                        ICT and Management professionals in a country which is seriously committed to accelerate, by all
+                        means, the realization of its ambition to become a major service provider in the field of
+                        Information Technology, Management and Finance, Sustainable Development and allied areas.</p>
+                </aside>
+
+            </div>
+
+            <div id="map" style="height:180px;"></div>
+
+
+        </div>
+
+
+        <div data-role="footer">
+            <h3><a href="#">Contact Us</a></h3>
+        </div>
+    </div>
+
+    <!----PageThree Ends------>
+
+    <!----PageFour Starts------>
+
+    <div data-role="page" id="pagefour" data-theme="a">
+
+
+
+        <!-- Sidebar -->
+
+        <div data-role="panel" id="mypanel" data-display="reveal" data-position="left">
+
+            <div id="Sidebar11" class="sidebar1">
+                <a href="#" class="closebtn" data-rel="close">&times;</a>
+
+                <a id="first" href="#pageone"><i class="fas fa-home"></i>Home</a>
+                <a href="#pagefour"><i class="fas fa-fire"></i>Events</a>
+                <a href="#pagefive"><i class="fas fa-history"></i>News</a>
+                <a href="#pagetwo"><i class="fas fa-question-circle"></i>FAQ</a>
+                <a href="#pagethree"><i class="fas fa-map-marked"></i>Locate Us</a>
+            </div>
+            <!-- panel content goes here -->
+        </div><!-- /panel -->
+
+
+        <div data-role="panel" id="mypanelL" data-display="reveal" data-position="right">
+
+
+            <div id="Sidebar2" class="sidebar2">
+                <a href="#" class="closebtn" data-rel="close">&times;</a>
+                <a id="bfirst" class="bfirst" href="#"><i class="fas fa-user"></i></a>
+                <a id="first" href="#pagesix"><i class="far fa-id-badge"></i> Profile</a>
+                <a href="#pageseven"><i class="fas fa-qrcode"></i> Generate QR Code</a>
+                <a href="addNews.html" class="staff hid"><i class="far fa-plus-square"></i> News</a>
+                <a href="addEvents.html" class="staff hid"><i class="far fa-plus-square"></i> Events</a>
+                <a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Sign out</a>
+            </div>
+
+        </div><!-- /panel -->
+
+        <!---X---Sidebars-----X-->
+
+
+
+        <div data-role="header">
+            <div class="header-section">
+                <div class="panel-right" style="margin-left:15px; margin-top:15px;">
+                    <a href="#mypanel"><i class="fas fa-align-justify"></i></a>
+                </div>
+                <div class="header-center">
+                    <img src="./assets/utmlogo.png" style="height:80%; width:90%;" class="header-logo" alt="">
+
+                </div>
+
+                <div class="panel-left" style="margin-right:15px; margin-top:15px;">
+                    <a href="#mypanelL"><i class="far fa-user"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div data-role="main" class="ui-content">
+
+            <div class="main-welcome" style="text-align: center; margin-bottom: 20px;">
+                <img src="./assets/calendar.png" style="width:100px;height:100px;" alt="">
+                <p>Official Events</p>
+            </div>
+
+            <div class="main-table-container" style="width:100%; overflow:hidden;">
+                <table id="table_id" class="display">
+                    <thead>
+                        <th>School</th>
+                        <th>Type</th>
+                        <th>Content</th>
+                        <th>Date</th>
+                        <th>Venue</th>
+
+
+                    </thead>
+                    <tbody id="table-data">
+
+                    </tbody>
+                </table>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <div data-role="footer" id="footer">
+            <h3><a href="#">Dev by MB</a></h3>
+        </div>
+
+
+    </div>
+
+    <!----PageFour Ends------>
+
+
+
+    <!----PageFive Starts------>
+
+    <div data-role="page" id="pagefive" data-theme="a">
+
+
+
+        <!-- Sidebar -->
+
+        <div data-role="panel" id="mypanel" data-display="reveal" data-position="left">
+
+            <div id="Sidebar11" class="sidebar1">
+                <a href="#" class="closebtn" data-rel="close">&times;</a>
+
+                <a id="first" href="#pageone"><i class="fas fa-home"></i>Home</a>
+                <a href="#pagefour"><i class="fas fa-fire"></i>Events</a>
+                <a href="#pagefive"><i class="fas fa-history"></i>News</a>
+                <a href="#pagetwo"><i class="fas fa-question-circle"></i>FAQ</a>
+                <a href="#pagethree"><i class="fas fa-map-marked"></i>Locate Us</a>
+            </div>
+            <!-- panel content goes here -->
+        </div><!-- /panel -->
+
+
+        <div data-role="panel" id="mypanelL" data-display="reveal" data-position="right">
+
+
+            <div id="Sidebar2" class="sidebar2">
+                <a href="#" class="closebtn" data-rel="close">&times;</a>
+                <a id="bfirst" class="bfirst" href="#"><i class="fas fa-user"></i></a>
+                <a id="first" href="#pagesix"><i class="far fa-id-badge"></i> Profile</a>
+                <a href="#pageseven"><i class="fas fa-qrcode"></i> Generate QR Code</a>
+                <a href="addNews.html" class="staff hid"><i class="far fa-plus-square"></i> News</a>
+                <a href="addEvents.html" class="staff hid"><i class="far fa-plus-square"></i> Events</a>
+                <a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Sign out</a>
+            </div>
+
+        </div><!-- /panel -->
+
+        <!---X---Sidebars-----X-->
+
+
+
+        <div data-role="header">
+            <div class="header-section">
+                <div class="panel-right" style="margin-left:15px; margin-top:15px;">
+                    <a href="#mypanel"><i class="fas fa-align-justify"></i></a>
+                </div>
+                <div class="header-center">
+                    <img src="./assets/utmlogo.png" style="height:80%; width:90%;" class="header-logo" alt="">
+
+                </div>
+
+                <div class="panel-left" style="margin-right:15px; margin-top:15px;">
+                    <a href="#mypanelL"><i class="far fa-user"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div data-role="main" class="ui-content">
+
+            <div class="main-welcome" style="text-align: center; margin-bottom: 20px;">
+                <img src="./assets/news-alert.png" style="width:100px;height:100px;" alt="">
+                <p>Latest News by UTM</p>
+            </div>
+
+            <div class="main-table-container" style="width:100%; overflow:hidden;">
+                <table id="table_news" class="display">
+                    <thead>
+                        <th>School</th>
+                        <th>Type</th>
+                        <th>Information</th>
+
+
+                    </thead>
+                    <tbody id="table-data">
+
+                    </tbody>
+                </table>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <div data-role="footer" id="footer">
+            <h3><a href="#">Dev by MB</a></h3>
+        </div>
+
+
+    </div>
+
+    <!----PageFive Ends------>
+
+    <!----PageSix Starts------>
+
+    <div data-role="page" id="pagesix" data-theme="a">
+
+
+
+        <!-- Sidebar -->
+
+        <div data-role="panel" id="mypanel" data-display="reveal" data-position="left">
+
+            <div id="Sidebar11" class="sidebar1">
+                <a href="#" class="closebtn" data-rel="close">&times;</a>
+
+                <a id="first" href="#pageone"><i class="fas fa-home"></i>Home</a>
+                <a href="#pagefour"><i class="fas fa-fire"></i>Events</a>
+                <a href="#pagefive"><i class="fas fa-history"></i>News</a>
+                <a href="#pagetwo"><i class="fas fa-question-circle"></i>FAQ</a>
+                <a href="#pagethree"><i class="fas fa-map-marked"></i>Locate Us</a>
+            </div>
+            <!-- panel content goes here -->
+        </div><!-- /panel -->
+
+
+        <div data-role="panel" id="mypanelL" data-display="reveal" data-position="right">
+
+
+            <div id="Sidebar2" class="sidebar2">
+                <a href="#" class="closebtn" data-rel="close">&times;</a>
+                <a id="bfirst" class="bfirst" href="#"><i class="fas fa-user"></i></a>
+                <a id="first" href="#pagesix"><i class="far fa-id-badge"></i> Profile</a>
+                <a href="#pageseven"><i class="fas fa-qrcode"></i> Generate QR Code</a>
+                <a href="addNews.html" class="staff hid"><i class="far fa-plus-square"></i> News</a>
+                <a href="addEvents.html" class="staff hid"><i class="far fa-plus-square"></i> Events</a>
+                <a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Sign out</a>
+            </div>
+
+        </div><!-- /panel -->
+
+        <!---X---Sidebars-----X-->
+
+
+
+        <div data-role="header">
+            <div class="header-section">
+                <div class="panel-right" style="margin-left:15px; margin-top:15px;">
+                    <a href="#mypanel"><i class="fas fa-align-justify"></i></a>
+                </div>
+                <div class="header-center">
+                    <img src="./assets/utmlogo.png" style="height:80%; width:90%;" class="header-logo" alt="">
+
+                </div>
+
+                <div class="panel-left" style="margin-right:15px; margin-top:15px;">
+                    <a href="#mypanelL"><i class="far fa-user"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div data-role="main" class="ui-content">
+
+            <div class="card">
+                <div class="avatar">
+                    <img src="https://randomuser.me/api/portraits/men/75.jpg">
+                </div>
+                <div class="title" id="profileTitle">
+
+                </div>
+                <div class="description" id="profileDescription">
+
+                    <form method="POST" id="regForm">
+                        <table>
+                            <tboby>
+
+                                <tr>
+                                    <td class="lbl">Username:</td>
+                                    <td><input type="text" name="username" id="usernameProfile" class="textbox" /></td>
+                                </tr>
+                                <tr>
+                                    <td class="lbl">Email:</td>
+                                    <td><input type="text" name="email" id="emailProfile" class="textbox" /></td>
+                                </tr>
+                                <tr>
+                                    <td class="lbl">Student ID:</td>
+                                    <td><input type="text" name="studentid" id="studentidProfile" class="textbox" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="lbl">Vac ID:</td>
+                                    <td><input type="text" name="vacid" id="vacidProfile" class="textbox" /></td>
+                                </tr>
+                                <tr>
+                                    <td class="lbl">Password:</td>
+                                    <td><input type="password" name="Opassword" id="passProfile" class="textbox" /></td>
+                                </tr>
+                                <tr>
+                                    <td class="lbl">Confirm Old Password:</td>
+                                    <td><input type="password" name="confirm" id="confirm" class="textbox" /></td>
+                                </tr>
+                                <tr>
+                                    <td class="lbl">New Password:</td>
+                                    <td><input type="password" name="password" id="newPass" class="textbox" /></td>
+                                </tr>
+
+
+                                </tbody>
+                        </table>
+                        <input type="button" id="update" value="Update" />
+                    </form>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li><i class="fab fa-facebook"></i></li>
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-github"></i></li>
+                        <li><i class="fab fa-dev"></i></li>
+                        <li><i class="fas fa-link"></i></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <div data-role="footer" id="footer">
+            <h3><a href="#">Dev by MB</a></h3>
+        </div>
+
+
+    </div>
+
+    <!----PageSix Ends------>
+
+
+    <!----PageSeven Starts------>
+
+    <div data-role="page" id="pageseven" data-theme="a">
+
+
+
+        <!-- Sidebar -->
+
+        <div data-role="panel" id="mypanel" data-display="reveal" data-position="left">
+
+            <div id="Sidebar11" class="sidebar1">
+                <a href="#" class="closebtn" data-rel="close">&times;</a>
+
+                <a id="first" href="#pageone"><i class="fas fa-home"></i>Home</a>
+                <a href="#pagefour"><i class="fas fa-fire"></i>Events</a>
+                <a href="#pagefive"><i class="fas fa-history"></i>News</a>
+                <a href="#pagetwo"><i class="fas fa-question-circle"></i>FAQ</a>
+                <a href="#pagethree"><i class="fas fa-map-marked"></i>Locate Us</a>
+            </div>
+            <!-- panel content goes here -->
+        </div><!-- /panel -->
+
+
+        <div data-role="panel" id="mypanelL" data-display="reveal" data-position="right">
+
+
+            <div id="Sidebar2" class="sidebar2">
+                <a href="#" class="closebtn" data-rel="close">&times;</a>
+                <a id="bfirst" class="bfirst" href="#"><i class="fas fa-user"></i></a>
+                <a id="first" href="#pagesix"><i class="far fa-id-badge"></i> Profile</a>
+                <a href="#pageseven"><i class="fas fa-qrcode"></i> Generate QR Code</a>
+                <a href="addNews.html" class="staff hid"><i class="far fa-plus-square"></i> News</a>
+                <a href="addEvents.html" class="staff hid"><i class="far fa-plus-square"></i> Events</a>
+                <a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Sign out</a>
+            </div>
+
+        </div><!-- /panel -->
+
+        <!---X---Sidebars-----X-->
+
+
+
+        <div data-role="header">
+            <div class="header-section">
+                <div class="panel-right" style="margin-left:15px; margin-top:15px;">
+                    <a href="#mypanel"><i class="fas fa-align-justify"></i></a>
+                </div>
+                <div class="header-center">
+                    <img src="./assets/utmlogo.png" style="height:80%; width:90%;" class="header-logo" alt="">
+
+                </div>
+
+                <div class="panel-left" style="margin-right:15px; margin-top:15px;">
+                    <a href="#mypanelL"><i class="far fa-user"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div data-role="main" class="ui-content">
+
+            <div class="qr-main" style=" width:100%;height:400px;">
+
+
+                <div id="qrcode" style="width:400px; height:400px; margin-top:35px;
+            margin-left:20px;"></div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+        <div data-role="footer" id="footer">
+            <h3><a href="#">Dev by MB</a></h3>
+        </div>
+
+
+    </div>
+
+    <!----PageSeven Ends------>
+
+    <script>
+
+        var map;
+
+        function getMap() {
+            map = L.map('map', {
+                center: [-20.176282308095775, 57.467347903831296],
+                zoom: 13
+            });
+
+            var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright%22%3EOpenStreetMap</a> contributors'
+            })
+
+            osm.addTo(map);
+            //-20.176282308095775, 57.467347903831296
+            //var marker = L.marker([38.717333,-122.4113333]).addTo(map);
+            // var marker = L.marker([secondCoordinate,firstCoordinate]).addTo(map);
+        }
+        getMap();
+        let lat = -20.176282308095775;
+        let long = 57.467347903831296;
+
+        function addMarker(lat, long) {
+            var newMarker = L.marker([lat, long]).addTo(map);
+        }
+
+        $("#locateUs").click(function () {
+
+            addMarker(lat, long);
+            alert('Here We Are!');
+
+        });
+
+
+
+
+
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cube",
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+
+
+        function test() {
+            let text = null;
+            if (typeof (Storage) != "undefined") {
+                text = localStorage.getItem('username');
+                let logUser = document.getElementsByClassName("bfirst");
+                Array.from(logUser).forEach((log) => {
+                    // tag.classList.remove("hid");
+                    log.append("  Logged in as: " + text);
+
+
+                })
+            }
+
+            /* if (typeof (Storage) != "undefined") {
+                 text = localStorage.getItem('username');
+             }
+ 
+             $("#bfirst").append("  Logged in as: " + text);*/
+        }
+
+        function loadProfile1(userLogged) {
+            if (typeof (Storage) != "undefined") {
+
+                userLogged = localStorage.getItem('username');
+            }
+
+            alert(userLogged);
+        }
+        //loadProfile();
+
+
+        test();
+        getContent3();
+        getContent4();
+        getProfile();
+
+        document.querySelectorAll('.logout').forEach(cell => cell.addEventListener('click', logout, { once: true }
+        ));
+
+        function logout(clickEvent) {
+
+            const clickedCell = clickEvent.target;
+            if (clickedCell != null) {
+                alert('Successfully Logged out');
+            }
+
+            if (typeof (Storage) != "undefined") {
+                localStorage.removeItem('username');
+                localStorage.removeItem('staff');
+                window.location = 'index.html';
+            }
+
+        }
+
+
+        var promoticker = function () {
+            var window_width = window.innerWidth;
+            var speed = 12 * window_width;
+            $('#promo-notifications li:first').animate({ left: '-1500px' }, speed, 'linear', function () {
+                $(this).detach().appendTo('#promo-notifications ul').css('left', "100%");
+                promoticker();
+            });
+        };
+        if ($("#promo-notifications li").length > 1) {
+            promoticker();
+        }
+
+
+        function removeHidden() {
+            let staff = null;
+            if (typeof (Storage) != "undefined") {
+
+                staff = localStorage.getItem('staff');
+                if (staff != null) {
+                    let hiddenTag = document.getElementsByClassName("staff");
+                    Array.from(hiddenTag).forEach((tag) => {
+                        tag.classList.remove("hid");
+                        console.log(staff);
+                    })
+
+                }
+
+            }
+
+
+        };
+
+        removeHidden();
+
+
+        document.querySelectorAll('#table-data tr').forEach(cell => cell.addEventListener('click', handleClick, { once: true }
+        ));
+
+        function handleClick(clickEvent) {
+            const clickedRow = clickEvent.target;
+            let text = clickedRow.texContent;
+            alert(text);
+
+        }
+
+        /* 
+         var table = $('#table_id').DataTable();
+
+         $('#table_id tbody').on('click', 'tr', function () {
+     var data = table.row( this ).textContent;
+     alert( 'You clicked on '+data[1]+'\'s row' );
+
+ } );*/
+
+        function getWeather() {
+
+            fetch("https://weatherapi-com.p.rapidapi.com/timezone.json?q=%3CREQUIRED%3E", {
+                "method": "GET",
+                "headers": {
+                    "x-rapidapi-key": "a0dd23bed6mshe7bd34f5022152ap1f6d4ajsn344f04d3fc2d",
+                    "x-rapidapi-host": "weatherapi-com.p.rapidapi.com"
+                }
+            })
+                .then(response => {
+                    console.log(response);
+                })
+                .catch(err => {
+                    console.error(err);
+                });
+        }
+
+        // getWeather();
+
+
+        //---- Generate Qr Code ---------//
+
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            width: 300,
+            height: 300
+        });
+
+        function makeCode() {
+            var elText = document.getElementById("text");
+            let userLogged = null;
+            if (typeof (Storage) != "undefined") {
+
+                userLogged = localStorage.getItem('username');
+                // alert("Local Not Null");
+            }
+            if (userLogged != null) {
+                $.ajax({
+                    type: "GET",  //Request type
+                    url: "includes/getProfile.php?username=" + userLogged,
+                    data: { username: userLogged },
+                    cache: false,
+                    success: function (data) {
+                        alert("AJAX!");
+                        //alert(data);
+                        let JsonRespone = $.parseJSON(data);
+                        // alert(JsonRespone.Fname);
+                        let text = (JsonRespone.Fname).toString() + "  " + (JsonRespone.Lname).toString() + "\n \n" + (JsonRespone.studentid).toString() + "\n \n" + (JsonRespone.vacid).toString();
+                        if (text != null) {
+                            console.log(text);
+                            qrcode.makeCode(text);
+
+                        }
+
+
+                    }
+                })
+            }
+
+
+        }
+
+        makeCode();
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js/jquery.mobile-1.4.5.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.4.5.js"></script>
+    <script src="./js/login2.js"></script>
+	<script src="cordova.js"></script>
+    <title>UTM APP</title>
+</head>
+<body>
+    
+ <!-------HomeScreen-->
+ <div data-role="page" id="pageone" data-theme="a">
+    <div data-role="header">
+        <div class="header-section">
+            <img src="./assets/utmlogo.png" style="height:80%; width:90%;" class="header-logo" alt="">
+        </div>
+
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <div class="card">
+            <form method="POST">
+                <h2 class="title"> Register</h2>
+                <p class="subtitle">Don't have an account? <a href="./register.html"> Sign up</a></p>
+
+                <p class="or"><span>or</span></p>
+                <h2 class="title"> Log In</h2>
+
+                <div class="email-login">
+                    <label for="username"> <b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="username" id="username" required>
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" id="password" required>
+                    <input type="checkbox" name="checkbox-mini-0" id="checkbox-mini-0" value="1" data-mini="true">
+                    <label for="checkbox-mini-0">Are you a Staff?</label>
+                </div>
+                <button class="cta-btn" id="sub" value="submit" >Log In</button>
+                <a class="forget-pass" href="#">Forgot password?</a>
+            </form>
+        </div>
+
+    </div>
+
+
+    <div data-role="footer">
+        <h3><a href="#">Contact Us</a></h3>
+    </div>
+</div>
+
+
+</body>
+</html>
